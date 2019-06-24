@@ -3,8 +3,7 @@ Quick and easy application of machine learning to molecular dynamics trajectorie
 
 The structure of protein comparing to its native state is usually estimated by fraction of native contacts:
 
-
-<img src="demo/eqn-qnative.png" width="40%" height="40%" alt="qn" align="center" />
+![qn](demo/eqn-qnative.png)
 
 However, the tolerance of distance fluctuation is set to be uniform for all native contacts, which are composed of different amino acid pairs with different significance of interactions.
 
@@ -49,5 +48,5 @@ Accuracy = 1.00
 ---------------
 ```
 
-<img src="demo/demo-epoch-accu-loss.png" width="45%" height="45%" alt="qn"/>
-<img src="demo/demo-frame-pred-force.png" width="45%" height="45%" alt="qn"/>
+<img src="demo/demo-epoch-accu-loss.png" width="60%" height="60%" alt="demo-epoch-accu-loss"/>
+<img src="demo/demo-frame-pred-force.png" width="60%" height="60%" alt="demo-frame-pred-force"/>
