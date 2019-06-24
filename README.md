@@ -12,12 +12,12 @@ Here, a different approach is proposed to determine whether the protein is in it
 Currently only criteria of nativeness is calculated but advanced applications such as feature extraction can be added when necessary, since all the coordinates are retrieved based on current implementation.
 
 
-Equilibrations at 300K (green )and 600K (pink) will be used for training.
+Equilibrations at 300K (green) and 600K (pink) will be used for training.
 
 <img src="demo/demo-temp300.gif" width="40%" height="40%" alt="eq300k" align="center" />
 <img src="demo/demo-temp600.gif" width="40%" height="40%" alt="eq600k" align="center" />
 
-Then, a steered molecular dynamics (SMD) trajectory is used for prediction. Note that the protein is considered as non-native immediately after the first unfolding event.
+A steered molecular dynamics (SMD) trajectory is used for prediction. Note that the protein is considered as non-native immediately after the first unfolding event.
 
 <img src="demo/demo-smd.gif" width="40%" height="40%" alt="smd300k" align="center" />
 
