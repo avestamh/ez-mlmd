@@ -1,6 +1,7 @@
 # ez-mlmd
 Quick and easy application of machine learning to molecular dynamics trajectories
 
+### 1. ez-native.py
 The structure of protein comparing to its native state is usually estimated by fraction of native contacts:
 
 ![qn](demo/eqn-qnative.png)
