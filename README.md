@@ -8,7 +8,7 @@ The structure of protein comparing to its native state is usually estimated by f
 
 However, the tolerance of distance fluctuation is set to be uniform for all native contacts, which are composed of different amino acid pairs with different significance of interactions.
 
-Here, a different approach is proposed to determine whether the protein is in its native state based on machine learning of its equilibration trajectories at different temperatures. Specifically, the Cartesian coordinates of heavy atoms in each frame will be used as training sets. All frames simulated at 300K will be labeled as in "native state" (`1`) and structures at 600K will be considered as "unfolded" (`0`). 
+Here, a different approach is proposed to determine whether the protein is in its native state based on supervised machine learning of its equilibration trajectories at different temperatures. Specifically, the Cartesian coordinates of heavy atoms in each frame will be used as training sets. All frames simulated at 300K will be labeled as in "native state" (`1`) and structures at 600K will be considered as "unfolded" (`0`). 
 
 Currently only criteria of nativeness is calculated but advanced applications such as feature extraction can be added when necessary, since all the coordinates are retrieved based on current implementation.
 
@@ -51,3 +51,6 @@ Accuracy = 1.00
 
 <img src="demo/demo-epoch-accu-loss.png" width="60%" height="60%" alt="demo-epoch-accu-loss"/>
 <img src="demo/demo-frame-pred-force.png" width="60%" height="60%" alt="demo-frame-pred-force"/>
+
+### 2. ez-cluster.py
+When study protein folding, thousands of trajectories might be used to study all possible folding pathways. However, it is not feasible to examine each plot to determine the partition information of different pathways. Here, an unsupervised learning method is proposed to determine the percentage of each pathway.
